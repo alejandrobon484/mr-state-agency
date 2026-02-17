@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MR State Agency — Automatización Inmobiliaria</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -76,34 +84,13 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
       z-index: 1001;
     }
 
-    .logo-icon {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, var(--gold-400), var(--gold-200));
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: var(--navy-900);
-    }
-
-    .logo-text {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: var(--white);
-      letter-spacing: 0.02em;
-    }
-
-    .logo-text span {
-      color: var(--gold-400);
+    .logo-img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
     }
 
     .nav-links {
@@ -732,6 +719,10 @@
       border-bottom: 1px solid rgba(248, 246, 240, 0.06);
     }
 
+    .footer-brand .logo-img {
+      height: 36px;
+    }
+
     .footer-brand p {
       color: rgba(248, 246, 240, 0.45);
       font-size: 0.88rem;
@@ -818,6 +809,8 @@
 
       .hero { padding: 5rem 1.5rem 3rem; min-height: 90vh; }
 
+      .logo-img { height: 34px; }
+
       .service-item {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -883,8 +876,7 @@
   <header class="header">
     <div class="header-inner">
       <a href="#" class="logo">
-        <div class="logo-icon">MR</div>
-        <div class="logo-text">MR <span>State Agency</span></div>
+        <img src="assets/logo-white.png" alt="MR State Digital Agency" class="logo-img">
       </a>
 
       <nav class="nav-links">
@@ -1187,8 +1179,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <div class="logo-icon">MR</div>
-            <div class="logo-text">MR <span>State Agency</span></div>
+            <img src="assets/logo-white.png" alt="MR State Digital Agency" class="logo-img">
           </a>
           <p>Automatización inteligente para inmobiliarias que quieren crecer de forma predecible y escalable.</p>
         </div>
